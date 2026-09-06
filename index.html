@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>wline — a régi chat újra él</title>
+<meta name="description" content="A wline.hu régi közösségi chat visszahozva egy 10 éves szerverpéldányból — Kocsma szoba, Szűcs Nándi bot, fórum, Carp-e Diem. Nosztalgiavideó és sztori.">
+<meta property="og:title" content="wline — a régi chat újra él">
+<meta property="og:description" content="10 évvel ezelőtti wline szerver feltámasztva. Kocsma, Szűcs Nándi bot, fórum, Carp-e Diem — nézd meg a videót.">
+<meta property="og:type" content="website">
+<style>
+  :root{
+    color-scheme: dark;
+    --bg: #0d1117;
+    --panel: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --accent: #58a6ff;
+    --accent2: #f0883e;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background: radial-gradient(1200px 600px at 50% -10%, #1b2230 0%, var(--bg) 60%);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+  }
+  .wrap{ max-width: 1040px; margin: 0 auto; padding: 48px 20px 80px; }
+  header{ text-align:center; margin-bottom: 40px; }
+  .layout{
+    display: grid;
+    grid-template-columns: minmax(240px, 340px) 1fr;
+    gap: 32px;
+    align-items: start;
+  }
+  @media (max-width: 720px){
+    .layout{ grid-template-columns: 1fr; }
+  }
+  .logo{
+    display:inline-block;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    color: var(--muted);
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 6px 16px;
+    margin-bottom: 18px;
+  }
+  h1{
+    font-size: clamp(28px, 5vw, 44px);
+    margin: 0 0 8px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline{ color: var(--muted); font-size: 17px; margin: 0; }
+  .video{
+    position: relative;
+    width: 100%;
+    padding-top: 177.78%; /* 9:16 álló videó */
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    box-shadow: 0 20px 60px -20px rgba(0,0,0,.6);
+  }
+  .video iframe{
+    position:absolute; inset:0; width:100%; height:100%; border:0;
+  }
+  .content{ display:flex; flex-direction:column; gap:20px; }
+  .card{
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin-bottom: 20px;
+  }
+  .card h2{
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--accent);
+    margin: 0 0 10px;
+  }
+  .card p{ margin: 0 0 10px; color: var(--text); }
+  .card p:last-child{ margin-bottom: 0; }
+  .rooms{
+    display:flex; flex-wrap:wrap; gap:8px; margin-top: 14px;
+  }
+  .pill{
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    background: rgba(88,166,255,.1);
+    border: 1px solid rgba(88,166,255,.3);
+    color: var(--accent);
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+  footer{
+    text-align:center;
+    margin-top: 48px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  footer a{ color: var(--accent); text-decoration:none; }
+  footer a:hover{ text-decoration:underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <span class="logo">wline.chat</span>
+    <h1>A régi wline újra él</h1>
+    <p class="tagline">Egy 10 évvel ezelőtti szerverpéldány, feltámasztva — chat, fórum, Kocsma, Szűcs Nándi és Carp-e Diem.</p>
+  </header>
+
+  <div class="layout">
+
+    <div class="video">
+      <iframe
+        src="https://www.youtube.com/embed/Ti6qos-zG1Q"
+        title="wline — nosztalgiavideó"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        loading="lazy"></iframe>
+    </div>
+
+    <div class="content">
+      <div class="card">
+        <h2>Mi ez?</h2>
+        <p>
+          Előkerült egy régi VirtualBox-lemez egy tíz évvel ezelőtti gépről — rajta a wline chat teljes, akkor élő
+          állapotban lévő szerverpéldánya. Sikerült újra elindítani, és minden a régi fényében pompázik: a Kocsma
+          szoba, a kezdetleges de imádnivaló <em>Szűcs Nándi</em> chatbot, a fórum, és a horgászjáték, a Carp-e Diem.
+        </p>
+        <p>A videóban ezt a feltámasztott rendszert járjuk körbe.</p>
+      </div>
+
+      <div class="card">
+        <h2>Régi ismerős szobák</h2>
+        <p>Ha ezek a nevek ismerősek, ez neked szól:</p>
+        <div class="rooms">
+          <span class="pill">Kocsma</span>
+          <span class="pill">Szűcs Nándi bot</span>
+          <span class="pill">Fórum</span>
+          <span class="pill">Carp-e Diem</span>
+          <span class="pill">wline.hu</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    Ha te is tag voltál, és megismersz valamit a videóban — szólj! · <a href="https://www.youtube.com/watch?v=Ti6qos-zG1Q">Videó a YouTube-on</a>
+  </footer>
+
+</div>
+</body>
+</html>
