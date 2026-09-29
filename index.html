@@ -186,6 +186,8 @@ button.claim[disabled] { background: var(--surface2); color: var(--muted); curso
 .race img { display: block; image-rendering: pixelated; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; }
 .cols { align-items: start; }
 .copy { font: inherit; font-size: 12px; cursor: pointer; padding: 2px 8px; margin-left: 4px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--text); }
+.vid { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #000; border-radius: 0 0 12px 12px; }
+.vid-note { margin: 0; padding: 10px 18px; font-size: 12.5px; color: var(--muted); border-top: 1px solid var(--line); }
 </style>
 </head>
 <body>
@@ -269,6 +271,15 @@ button.claim[disabled] { background: var(--surface2); color: var(--muted); curso
       </ul>
     </section>
   </div>
+
+      <section class="panel full">
+        <header><h2>Így épül újra</h2><span>git log, 2026</span></header>
+        <video class="vid" controls loop muted playsinline preload="metadata" aria-label="A wline repó idei fejlődése gource-szal: egyetlen fejlesztő, sok éjszaka">
+          <source src="/wline.mp4" type="video/mp4">
+          A böngésződ nem játssza le a videót.
+        </video>
+        <p class="vid-note">Az idei év a forráskódban: egy szereplő, kevés alvás. Nándi szerint ez normális.</p>
+      </section>
 
   <section class="panel full">
     <header><h2>Eseménynapló</h2><span>/var/log/wline.log</span></header>
